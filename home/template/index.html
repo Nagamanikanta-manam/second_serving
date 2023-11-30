@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+
+    <style>
+         
+        
+        /* Change header color to green */
+        .mdl-layout__header {
+            background-color: #009688;
+        }
+
+        /* Change tab color to green */
+        .mdl-layout__tab {
+           background-color: #009688; color: white;
+        }
+
+        /* Change tab underline color to orange on click */
+        .mdl-layout__tab.is-active:after {
+            background-color: orange !important;
+        }
+
+        /* Align title to the left */
+        .mdl-layout-title {
+            margin-left: -60px;
+        }
+
+        /* Hide the navigation bar */
+        .mdl-layout__drawer {
+            display: none;
+        }
+        #a2{
+          margin-top: 30px;
+    width:90vw;
+    height: 60vh;
+    border-radius: 10px;
+  }
+  .mdl-button {
+    margin-bottom: 20px;
+  }
+  .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  color: rgb(255,255,255);
+  background-color: orange;
+}
+  #e2{
+    width:85vw;
+    height: 40vh;
+    border-radius: 10px;
+    background: #009688 ;
+
+    
+  
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+   }
+   #e2 p{
+             color:white;
+             font-size: 50px;
+             margin: 30px;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+  #e2 #p2 p{
+    font-size: 50px;}
+   
+        
+  @media screen and (max-width: 500px) {
+  
+  #a2{
+    
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    height: 40vh;
+    border-radius: 10px;
+  }
+  #e2{
+    width: 75vw;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    
+  }
+  #e2 p{
+    color:white;
+             font-size: 18px;
+             margin: 10px;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+    
+  }
+  .custom-card {
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 50px;
+            
+        }
+    #city  {
+      max-width: 40%;
+      margin-right: 5%;
+    }
+    #mand{
+      max-width:40%;
+    }
+    #dist {
+max-width:40%;
+margin-right: 5%;
+    }
+     #sta{
+max-width:40%;
+     }
+     #iconic{
+      width:50px;
+      height: 50px;
+     }input[type="file"] {
+      display: none; /* Hide the default file input */
+    }
+
+    
+    .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+  color: orange;
+      
+}
+.mdl-textfield__label::after {
+  background-color: orange;
+  
+}
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  color: rgb(255,255,255);
+  background-color: orange;
+}
+    /* Style for when file is chosen */
+    input[type="file"]:not(:empty) + label.custom-file-upload {
+      background-color: #2ecc71;
+    }
+    @media screen and (max-width: 500px) {
+      .custom-card {
+            width: 80%;
+            
+            
+        }
+    }
+    #e2{
+    width:85vw;
+    height: 40vh;
+    border-radius: 10px;
+    background: #009688 ;
+
+    
+  
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+   }
+   #e2 p{
+             color:white;
+             font-size: 50px;
+             margin: 30px;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+  #e2 #p2 p{
+    font-size: 50px;}
+   
+        
+  @media screen and (max-width: 500px) {
+  
+  #a2{
+    
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    height: 40vh;
+    border-radius: 10px;
+  }
+  #e2{
+    width: 75vw;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    
+  }
+  #e2 p{
+    color:white;
+             font-size: 18px;
+             margin: 10px;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+    
+  }
+       
+@media screen and (max-width: 500px) {
+  #e2{
+    margin-bottom: 15px;
+    
+  }
+  
+ 
+}
+
+input{
+       
+       outline: none; /* Optional: removes the outline on focus */
+   }
+@media screen and (max-width: 500px) {
+  #u_p{
+    font-size: 30px;
+  }
+  #e2{
+    margin-bottom: 15px;
+  }
+  
+  .mdl-layout__tab{
+    font-size:11px;
+  }
+  
+}.mdl-layout-title {
+  margin-left: -96px;
+}
+    </style>
+    
+    <title>Material Design Green Header Background</title>
+    
+    {% load static %} 
+   
+    
+ 
+</head>
+
+<body>
+    <!-- Simple header with fixed tabs. -->
+     
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title"><img src="{% static 'logo1.png' %}" style="width:200px; "> </span>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#fixed-tab-1" onclick="myFunction()" class="mdl-layout__tab is-active">Home</a>
+                <a href="#fixed-tab-2" onclick="myFunction2({{ login_status }})" class="mdl-layout__tab" id="addf">Add Spoiled food</a>
+                <a href="#fixed-tab-3" onclick="myFunction3({{ login_status }},'{{user_name}}','{{email}}','{{user_pro}}','{{village_name}}','{{mandal}}','{{district}}','{{state}}',{{ user_req }})" class="mdl-layout__tab">Profile</a>
+            </div>
+        </header>
+        
+        <main class="mdl-layout__content" id="j">
+     
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="page-content">2</div>
+            </section>
+            <section  id="fixed-tab-3">
+               
+            </section>
+        </main>
+    </div>
+    <div style="width:100vw; height: 30px; height:1vh;background-color:#ccc; position:fixed;bottom:0px; z-index:99;  ">
+
+      <div id="p" style="width:0vw; background-color: orange; height: 10px; ">
+
+      </div>
+    </div>
+
+   
+</body>
+<script>
+ 
+    function myFunction(){
+      let br=document.getElementById("fixed-tab-3");
+                br.innerHTML=''; 
+      var a=document.getElementById('p');
+  a.style.width=0+"%";
+                 let b=`
+                 <center>
+    <div >
+       <img src=   "{% static 'banner_bg3.png' %}" id="a2">
+      </div>
+  </center>
+  <center>
+    <div id="e2" >
+        <p>Now you can genreate </p>
+        <p id="p2" style="font-size: 50px;color:white;">WEALTH</p>
+        <p>from waste food</p>
+      
+      </div>
+      
+  </center>
+  <center>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick="handleButtonClick()">
+  Join us
+</button>
+
+    
+    </center>
+  `
+                 console.log("called");
+                let ar=document.getElementById("fixed-tab-1");
+                ar.innerHTML=''
+                
+                let j= document.createElement("div");
+                j.innerHTML=b; 
+                ar.appendChild(j);
+                let arc=document.getElementById("fixed-tab-2");
+                arc.innerHTML=''; 
+                
+        }
+        myFunction();
+        function handleButtonClick() {
+    var myButton = document.getElementById('addf');
+  
+    myButton.click();
+    console.log("clicked");
+  }
+
+function myFunction2(login_status){
+         
+           
+        let br=document.getElementById("fixed-tab-3");
+                br.innerHTML=''; 
+          var a=document.getElementById('p');
+  a.style.width=0+"%";
+          let ar=document.getElementById("fixed-tab-1");
+                ar.innerHTML='';
+          let d='';
+            if (login_status==0){
+               
+                 d=`  <div class="custom-card">
+      <form action="{% url 'login' %}" method="POST">
+        <center>  <H4 >Login</H4></center> 
+        {% csrf_token %} 
+    
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="email">
+          <label class="mdl-textfield__label" for="sample3" name="password">E-mail</label>
+        </div></center>
+        
+         
+       <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  >
+          <input class="mdl-textfield__input" type="password" id="sample3" name="password">
+          <label class="mdl-textfield__label" for="sample3">Password</label>
+        </div><!-- Colored raised button -->
+      
+        
+      </center>
+     
+      <center>New user <a href="#" style="color:orange;" onClick="myFunction2_reg()">Click here</a> </center> 
+      <center> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 10px;">
+    Login    </button></center> 
+
+
+
+    
+      </form>
+      </div>`}
+      else{
+           d=`   <center>
+      <div id="e2" >
+          <p>#Who cares spoiled food  </p>
+          
+          <p id="p2" style="font-size: 20px;color:white;">#second_servings</p>
+          
+          
+        </div>
+        
+    </center>
+
+    <div class="custom-card">
+      <form action="{% url 'add_food' %}" method="POST" enctype="multipart/form-data">
+        <center>  <H4 >Add Spoiled Food</H4></center> 
+       
+        {% csrf_token %} 
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="quantiy">
+          <label class="mdl-textfield__label" for="sample3">Quantity</label>
+        </div></center>
+        
+          <center>
+            <input type="file" id="fileInput"  style="margin-bottom: 10px;"    name="image"/>
+            <label for="fileInput" ><div id="tt3" class="icon material-icons"><img src="{% static 'icon.png' %}" id="iconic"></div>
+              <div class="mdl-tooltip" data-mdl-for="tt3">
+              Upload <strong>Image</strong>
+              </div></label>
+          </center>
+       <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  id="city">
+          <input class="mdl-textfield__input" type="text" id="sample3"  name="cit">
+          <label class="mdl-textfield__label" for="sample3">City/Village Name</label>
+        </div><!-- Colored raised button -->
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="mand">
+          <input class="mdl-textfield__input" type="text" id="sample3"  name="mand">
+          <label class="mdl-textfield__label" for="sample3">Manadal</label>
+        </div>
+      </center>
+      <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="dist">
+          <input class="mdl-textfield__input" type="text" id="sample3"  name="dist">
+          <label class="mdl-textfield__label" for="sample3">District</label>
+        </div>
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="sta">
+          <input class="mdl-textfield__input" type="text" id="sample3"  name="sta">
+          <label class="mdl-textfield__label" for="sample3">State</label>
+        </div>
+      </center>
+      <center> <button class="mdl-button mdl-js-button">
+       <img src={% static 'icons8-my-location-30.png' %} style="margin-right: 5px; width:15px; ;">   Use Current Location
+        </button></center> 
+        <br>
+        <center>
+        <div class="mdl-textfield mdl-js-textfield">
+          <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+          <label class="mdl-textfield__label" for="sample5">Description</label>
+        </div></center>
+    
+      <center> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Submit    </button></center> 
+      </form></div>
+  
+  
+          `}
+                 console.log("called3333");
+                 
+                let arc=document.getElementById("fixed-tab-2");
+                arc.innerHTML=''
+                
+                let k= document.createElement("div");
+                k.innerHTML=d; 
+                arc.appendChild(k);
+                componentHandler.upgradeElements(arc);
+        }
+
+      var j=document.getElementById('j');  
+      j.onscroll = function() {myf()};
+      
+      function myf(){
+        var j=document.getElementById('j');
+        console.log("scrolled");
+  var winScroll = j.scrollTop || j.scrollTop;
+  console.log("winScroll"+winScroll);
+  var height = j.scrollHeight - j.clientHeight;
+
+
+  var a=document.getElementById('p');
+  a.style.width=(winScroll/height)*100+"%";
+  
+
+}
+function myFunction3(login_status,user_name,email,user_pro,village_name,mandal,district,state,user_req){
+  console.log("reached here 1");
+  console.log(login_status)
+  console.log("f3")
+  
+      var a=document.getElementById('p');
+  a.style.width=0+"%";
+  let br=document.getElementById("fixed-tab-1");
+  
+                br.innerHTML=''; 
+                let cr=document.getElementById("fixed-tab-2");
+                cr.innerHTML=''; 
+                let b='';
+              if(login_status==0){
+
+                 b=` <div class="custom-card">
+      <form action="/home/login/" method="POST">
+        <center>  <H4 >Login</H4></center> 
+        {% csrf_token %}
+    
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="email">
+          <label class="mdl-textfield__label" for="sample3" name="email">E-mail</label>
+        </div></center>
+        
+         
+       <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  >
+          <input class="mdl-textfield__input" type="password" id="sample3" name="password">
+          <label class="mdl-textfield__label" for="sample3">Password</label>
+        </div><!-- Colored raised button -->
+      
+        
+      </center>
+     
+      <center>New user <a href="#" style="color:orange;" onClick="myFunction3_reg()">Click here</a> </center> 
+      <center> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 10px;">
+    Login    </button></center> 
+
+
+
+    
+      </form>
+      </div> `;}else{
+        b=`<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="custom-card">
+                <center><h2 id="u_p">User Profile</h2></center>
+                <p><strong>User Name:</strong> ${ user_name }</p>
+                <p><strong>Email:</strong> ${ email }</p>
+                <p><strong>Village Name:</strong> ${ village_name }</p>
+                <p><strong>Mandal:</strong> ${ mandal }</p>
+                <p><strong>District:</strong> ${ district }</p>
+                <p><strong>State:</strong> ${ state }</p>
+             <center>  <form action="{% url 'logout' %}" > <button class="mdl-button mdl-js-button mdl-button--accent" style="color:black; font-weight:700;">
+  Log Out
+</button> </form></center>
+            </div>
+   
+        </div>
+        
+    </div>
+    
+</div>
+
+`
+      }   
+                console.log("called");
+                let ar=document.getElementById("fixed-tab-3");
+                ar.innerHTML=''
+                
+                let j= document.createElement("div");
+                j.innerHTML=b; 
+                ar.appendChild(j);
+                
+                
+                
+                
+                
+                
+                let arc=document.getElementById("fixed-tab-2");
+                arc.innerHTML=''; 
+                componentHandler.upgradeElements(ar);
+        }
+
+
+        function myFunction2_reg(){
+          let br=document.getElementById("fixed-tab-3");
+                br.innerHTML=''; 
+          var a=document.getElementById('p');
+  a.style.width=0+"%";
+          let ar=document.getElementById("fixed-tab-1");
+                ar.innerHTML=''; 
+                let d=`<div class="custom-card">
+      <form action="/home/register/" method="POST">
+        <center>  <H4 >User Registration</H4></center> 
+        {% csrf_token %} 
+    
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="u_name">
+          <label class="mdl-textfield__label" for="sample3">User Name</label>
+        </div></center>
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+            <input class="mdl-textfield__input" type="text" id="sample3" name="e_mail">
+            <label class="mdl-textfield__label" for="sample3">E-mail</label>
+          </div><!-- Colored raised button --></center>
+          <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  >
+            <input class="mdl-textfield__input" type="password" id="sample3" name="password">
+            <label class="mdl-textfield__label" for="sample3">Password</label>
+          </div><!-- Colored raised button --></center>
+      
+       <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  id="city">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="v_name">
+          <label class="mdl-textfield__label" for="sample3">City/Village Name</label>
+        </div><!-- Colored raised button -->
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="mand">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="mandal">
+          <label class="mdl-textfield__label" for="sample3">Manadal</label>
+        </div>
+      </center>
+      <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="dist">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="dist">
+          <label class="mdl-textfield__label" for="sample3">District</label>
+        </div>
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="sta">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="sta">
+          <label class="mdl-textfield__label" for="sample3">State</label>
+        </div>
+      </center>
+      <center> <button class="mdl-button mdl-js-button">
+       <img src="icons8-my-location-30.png" style="margin-right: 5px; width:15px; ;">   Use Current Location
+        </button></center> 
+        <br>
+ 
+    
+      <center> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Register    </button></center> 
+      </form></div>
+  `
+          
+                 console.log("called");
+                let arc=document.getElementById("fixed-tab-2");
+                arc.innerHTML=''
+                
+                let k= document.createElement("div");
+                k.innerHTML=d; 
+                arc.appendChild(k);
+                componentHandler.upgradeElements(arc);
+        }
+        
+        function myFunction3_reg(){
+          console.log("my function called");
+          let br=document.getElementById("fixed-tab-2");
+                br.innerHTML=''; 
+          var a=document.getElementById('p');
+  a.style.width=0+"%";
+          let ar=document.getElementById("fixed-tab-1");
+                ar.innerHTML=''; 
+                let d=`<div class="custom-card">
+      <form action="/home/register/" method="POST">
+        <center>  <H4 >User Registration</H4></center> 
+        {% csrf_token %} 
+    
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="u_name">
+          <label class="mdl-textfield__label" for="sample3">User Name</label>
+        </div></center>
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+            <input class="mdl-textfield__input" type="text" id="sample3" name="e_mail">
+            <label class="mdl-textfield__label" for="sample3">E-mail</label>
+          </div><!-- Colored raised button --></center>
+          <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  >
+            <input class="mdl-textfield__input" type="password" id="sample3" name="password">
+            <label class="mdl-textfield__label" for="sample3">Password</label>
+          </div><!-- Colored raised button --></center>
+      
+       <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  id="city">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="v_name">
+          <label class="mdl-textfield__label" for="sample3">City/Village Name</label>
+        </div><!-- Colored raised button -->
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="mand">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="mandal">
+          <label class="mdl-textfield__label" for="sample3">Manadal</label>
+        </div>
+      </center>
+      <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="dist">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="dist">
+          <label class="mdl-textfield__label" for="sample3">District</label>
+        </div>
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="sta">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="sta">
+          <label class="mdl-textfield__label" for="sample3">State</label>
+        </div>
+      </center>
+      <center> <button class="mdl-button mdl-js-button">
+       <img src="icons8-my-location-30.png" style="margin-right: 5px; width:15px; ;">   Use Current Location
+        </button></center> 
+        <br>
+ 
+    
+      <center> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Register    </button></center> 
+      </form></div>
+  `
+          
+                 console.log("called");
+                let arc=document.getElementById("fixed-tab-3");
+                arc.innerHTML=''
+                
+                let k= document.createElement("div");
+                k.innerHTML=d; 
+                arc.appendChild(k);
+                componentHandler.upgradeElements(arc);
+        }
+
+    
+</script>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+          input{
+       
+       outline: none; /* Optional: removes the outline on focus */
+   }
+          .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+  color: orange;
+      
+}
+
+         .custom-card {
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 50px;
+            
+        }
+        .mdl-textfield__label::after {
+  background-color: orange;
+  
+}
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  color: rgb(255,255,255);
+  background-color: orange;
+}
+@media screen and (max-width: 500px) {
+  .custom-card {
+            width: 90%;
+            
+            
+        }
+
+}
+ 
+    </style>
+</head>
+<body>
+  <div id="container">
+    <div class="custom-card" >
+      {% load static %}
+      <center><div style="background-color: orange; border-radius: 10px;"><img src="{% static 'logo1.png' %}" style="width:200px;"></div></center>
+        <form action="{% url 'login' %}" method="POST">
+          <center>  <H4 > Bio gas Plant Login</H4></center> 
+          {% csrf_token %} 
+      
+          <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3" name="email">
+            <label class="mdl-textfield__label" for="sample3" name="password">E-mail</label>
+          </div></center>
+          
+           
+         <center>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  >
+            <input class="mdl-textfield__input" type="password" id="sample3" name="password">
+            <label class="mdl-textfield__label" for="sample3">Password</label>
+          </div><!-- Colored raised button -->
+        
+          
+        </center>
+       
+        <center>New user <a href="#" style="color:orange;" onClick="myFunction_reg()">Click here</a> </center> 
+        <center> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 10px;">
+      Login    </button></center> 
+  
+  
+  
+      
+        </form>
+        </div>
+      </div>
+</body>
+<script>
+  function myFunction_reg(){
+        
+        let arc=document.getElementById("container")
+        console.log("11111111111111111111"); 
+        console.log(arc.innerHTML);
+        arc.innerHTML=''; 
+        console.log("2222222222222222");
+        console.log(arc.innerHTML);
+        let ar=document.createElement('div')
+        
+        console.log(ar);
+        ar.innerHTML=`<div class="custom-card">
+      <form action="/home/bio_login" method="POST">
+        <center>  <H4 >Bio Gas Plant Registration</H4></center> 
+        {% csrf_token %} 
+    
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="u_name">
+          <label class="mdl-textfield__label" for="sample3">User Name</label>
+        </div></center>
+        <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+            <input class="mdl-textfield__input" type="text" id="sample3" name="e_mail">
+            <label class="mdl-textfield__label" for="sample3">E-mail</label>
+          </div><!-- Colored raised button --></center>
+          <center>   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  >
+            <input class="mdl-textfield__input" type="password" id="sample3" name="password">
+            <label class="mdl-textfield__label" for="sample3">Password</label>
+          </div><!-- Colored raised button --></center>
+      
+       <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"  id="city">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="v_name">
+          <label class="mdl-textfield__label" for="sample3">City/Village Name</label>
+        </div><!-- Colored raised button -->
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="mand">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="mandal">
+          <label class="mdl-textfield__label" for="sample3">Manadal</label>
+        </div>
+      </center>
+      <center>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="dist">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="dist">
+          <label class="mdl-textfield__label" for="sample3">District</label>
+        </div>
+      
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="sta">
+          <input class="mdl-textfield__input" type="text" id="sample3" name="sta">
+          <label class="mdl-textfield__label" for="sample3">State</label>
+        </div>
+      </center>
+      <center> <button class="mdl-button mdl-js-button">
+       <img src="icons8-my-location-30.png" style="margin-right: 5px; width:15px; ;">   Use Current Location
+        </button></center> 
+        <br>
+ 
+    
+      <center> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Register    </button></center> 
+      </form></div>`
+  }
+   arc.appendChild(ar);
+   console.log(arc.innerHTML)
+  componentHandler.upgradeElements(arc);
+</script>
+</html>
